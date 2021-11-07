@@ -1,0 +1,294 @@
+
+
+
+/*===============================
+   ĐÂY LÀ PHẦN BANNER
+   ==========================*/
+
+.bannerblogall{
+	width: 1200px;
+	height: 400px;
+	margin: auto;
+	background-color: pink;
+}
+
+
+#bannerblog{
+	position:relative;
+	/*margin-left:10%;*/
+	width: 100%;
+	height:400px;
+	overflow:hidden;
+}
+#bannerblog:hover a img{
+	transform: scale(1.15);
+	transition: 1.5s;
+}
+#bannerblog a img{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:-2;
+	width: 100%;
+	height:400px;
+}
+#bannerblog:before{ /*duong thang trai*/
+	content:'';
+	position:absolute;
+	top: 10px;
+	left: 20px;
+	width:2px;
+	height: 380px ;
+	background:#fff;
+	transition: 0.5s ease-in-out;
+	transform:scale(0);
+	z-index: 1;
+}
+#bannerblog #bannerblog_phai:before{ /*duong thang phai*/
+	content:'';
+	position:absolute;
+	top: 10px;
+	left: 1170px;
+	width:2px;
+	height: 380px ;
+	background:#fff;
+	transition: 0.5s ease-in-out;
+	transform:scale(0);
+	z-index:1;
+}
+#bannerblog #bannerblog_img:before{ /*duong thang tren*/
+	content:'';
+	position:absolute;
+	top:16px;
+	left:1.2%;
+	width:97.5%;
+	height:2px;
+	background:#fff;
+	transition: 0.5s ease-in-out;
+	transform:scale(0);
+	z-index: 1;
+}
+#bannerblog #bannerblog_duoi:before{ /*duong thang duoi*/
+	content:'';
+	position:absolute;
+	top:380px;
+	left:1.2%;
+	width:97.5%;
+	height:2px;
+	background:#fff;
+	transition: 0.5s ease-in-out;
+	transform:scale(0);
+}
+#bannerblog:hover:before,#bannerblog:hover #bannerblog_phai:before,#bannerblog:hover #bannerblog_img:before, #bannerblog:hover #bannerblog_duoi:before{
+	transform:scale(1);
+}
+.blog_p{
+	color: black;
+	position: absolute;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 400px;
+	padding-left: 70px;
+	z-index: 10;
+	margin: 10px 0 0 10px;
+}
+
+/*===============================
+   kết thúc PHẦN BANNER
+   ==========================*/
+
+
+
+   /*===============================
+   ĐÂY LÀ PHẦN thân blog
+   ==========================*/
+  #thanblog{
+   	width: 1200px;
+   	margin: auto;
+   	height: 2800px;
+   	background-color: white;
+   }
+   .blog_le{
+   	width: 50px;
+   	height: 2750px;
+   	float: left;
+   	background-color: white;
+   }
+   #thanblog_trai{
+   	width: 770px;
+   	height: 2650px;
+   	float: left;
+   	background-color: white;
+
+   }
+   .blog1{
+   	width: 768px;
+   	height: 627px;
+   	border: 1px solid #e5e5e5;
+   	background-color: white;
+   }
+   .blog1_anh{
+   	width: 100%;
+   	height: 380px;
+   	background-color: ;
+   }
+   .blog1 .blog1_anh img
+   {
+   	width: 100%;
+   	height: 100%;
+   }
+   .blog1_cmt{
+   	padding-left: 10px;
+   	padding-right: 10px;
+   }
+   .blog1_cmt a:hover{
+   	text-decoration: none;
+   }
+   .blog_tieude:hover{
+   
+   	color: #66cc33
+
+   }
+   .docthemblog{
+   	border: 1px solid yellow;
+   }
+
+
+
+   /* phần blog phải*/
+   #thanblog_phai{
+   	width: 300px;
+	height: 2600px;
+	background-color: white;
+	float: right;
+   }
+
+   #chitiettao_trong{
+	width: 300px;
+	height: 2500px;
+	background-color: white;
+	float: right;
+}
+.Cam_ket{
+	border-bottom: 1px solid #dee2e6;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+	width: 295px;
+	height: 300px;
+}
+.ctsp_camket{
+	background-color: #66cc33;
+	width: 293px;
+	height: 50px;
+	color: 	white;
+	text-align: center;
+	line-height: 50px;
+	font-family: 'Itim', cursive;
+	font-size: 26px;
+}
+.Cam_ket p i{
+	color: #66cc33;
+}
+
+
+
+.ctsp_banchay{
+	
+	width: 293px;
+	height: 50px;
+	color: 	black;
+	text-align: center;
+	line-height: 105px;
+	font-family: 'Itim', cursive;
+	font-size: 26px;
+}
+
+
+
+.Ban_chay{
+	
+	width: 295px;
+	height: 574px;
+}
+.spbc1{
+	width: 289px;
+	height: 125px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+.bc_img{
+	float: left;
+	background-color: pink;
+	width: 94px;
+	height: 94px;
+	margin-top: 13px;
+}
+.bc_cap{
+	float: right;
+	background-color:  white;
+	width: 180px;
+	height: 113px;
+	padding: 5px;
+	line-height: 0px;
+
+}
+.Ban_chay .spbc1 .bc_cap h4 a{
+	color: #696969;
+}
+.Ban_chay .spbc1 .bc_cap h4 a:hover{
+text-decoration: none;
+color: #ffa02c;
+}
+
+.bc_cap_a{
+	color: red;
+}
+.bc_cap_a:hover{
+	text-decoration: none;
+	color: #ffa02c;
+}
+
+
+
+
+
+/*==============================
+======= PHẦN CHUYỂN TRANG==========*/
+.blog_chuyentrang{
+	width: 638px;
+    float: right;
+    height: 70px;
+    margin-top: 20px;
+	background-color: white;
+}
+#thanblog .blog_chuyentrang ul li{
+	list-style-type: none;
+}
+#thanblog .blog_chuyentrang ul li{
+	display: inline;
+}
+#thanblog .blog_chuyentrang  ul a{
+text-decoration:none;
+width:40px;
+height: 40px;
+float: left;
+text-align: center;
+line-height: 40px;
+background: white;
+color: #66cc33;
+font-weight:bold;
+text-align:center;
+line-height:35px;
+border: 1px solid #66cc33;
+border-radius: 50%;
+}
+#thanblog .blog_chuyentrang  ul a:hover{
+	background-color: #66cc33;
+	color: white;
+	border: 1px solid yellow;
+}
+.li1{
+	background-color: #66cc33;
+	color: white;
+}
